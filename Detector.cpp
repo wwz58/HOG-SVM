@@ -18,6 +18,8 @@ Detector::Detector(string trainOrTest, string dataPath, string hogTxt):data(data
 		cout << "可以开始训练SVM分类器了..." << endl;
 	}
 	else if(trainOrTest == "test"){
+		//load svm xml
+		svm = ml::SVM::load("svmLinearAllHard.xml");
 		//load hog txt and set hog
 		myDetector = loadHogTxt(hogTxt);
 		hog.setSVMDetector(myDetector);//设置检测器参数为自己训练的SVM参数
@@ -246,7 +248,7 @@ void Detector::testPic() {
 void Detector::testVideo()
 {
 	VideoCapture cap;
-	cap.open("C:\\FFOutput\\video.mp4");
+	cap.open("C:\\Users\\20203\\Desktop\\multi_people.mp4");
 	if (!cap.isOpened()) {
 		cout << "打开文件失败\n";
 		return;

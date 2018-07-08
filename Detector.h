@@ -34,7 +34,7 @@ using namespace std;
 
 class Detector {
 public:
-	//constructor //,
+	//constructor
 	Detector(string trainOrTest,
 		string dataPath = "C:\\Users\\20203\\Downloads\\INRIADATA\\normalized_images\\",
 		string hogTxt = "hogDetectorAllHard.txt");
