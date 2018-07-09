@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/txt">
+        <file>hogDetectorAllHard.txt</file>
+    </qresource>
+    <qresource prefix="/new/videoAndImg">
+        <file>timgRD981YXB.jpg</file>
+        <file>videoplayback.mp4</file>
+    </qresource>
+</RCC>
